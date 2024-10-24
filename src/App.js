@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header';
 import NotesPage from './pages/NotesPage';
-import SecondPage from './pages/SecondPage';
+import NotePage from './pages/NotePage';
 
 function App() {
 	return (
@@ -17,8 +17,8 @@ function App() {
 							element={<NotesPage />}
 						/>
 						<Route
-							path='/n'
-							element={<SecondPage />}
+							path='/note/:id'
+							element={<NotePage />}
 						/>
 					</Routes>
 				</div>
